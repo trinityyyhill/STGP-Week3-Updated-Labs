@@ -6,7 +6,7 @@ console.log(5 + 10 / 2 * 5 - 10);
 console.log((6 + 10) / 2 * 5 - 10);
 
 // Assignment Operators
-x=0
+let x=0
 console.log(x = x + 1);
 console.log(x+= 1);
 console.log(x++);
