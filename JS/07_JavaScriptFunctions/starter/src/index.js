@@ -21,38 +21,22 @@ console.log(movie);
 findMovie(movie);
 function returnMovie(movieTitle) {
     {
-        // Instruction 2-a
         for (let movie of movies) {
-            // Instruction 2-a-i
             if (movie.title === movieTitle) {
-                // Instruction 2-a-ii
                 return movie;
             }
-            // Instruction 2-a-iii
             console.log(movie);
         }
-        // Instruction 2b
         console.log("Any text, any text at all!");
-        // Instruction 8 - comment out line above and add line below
         return `Movie not found`;
     }    
 }
-
-// Instruction 3
 let myMovie = returnMovie("Avengers: Infinity War");
-// Instruction 4
 console.log(myMovie);
-// Instruction 5
 console.log(`${myMovie.title} is a film directed by ${myMovie.director} released in ${myMovie.year}`);
-
-// Instruction 6
 let myOtherMovie = returnMovie("Thor: Ragnorok");
-// Instruction 7
 console.log(myOtherMovie);
-
-// Instruction 10
 function myMovieDetails(anyMovie) {
-    // Instruction 11
     if (typeof (anyMovie) === 'object') {
         return `${anyMovie.title} is a film directed by ${anyMovie.director} released in ${anyMovie.year}`;
     } else {
@@ -60,8 +44,6 @@ function myMovieDetails(anyMovie) {
     }
 }
 
-// Instruction 12
 console.log(myMovieDetails(myOtherMovie));
 
-// Instruction 14 - a function as an argument to another function
 console.log(myMovieDetails(returnMovie("Jaws")));
