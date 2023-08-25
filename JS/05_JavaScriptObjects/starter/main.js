@@ -1,0 +1,15 @@
+const darthVader = {"allegiance": "The Light Side", "weapon": "lightsaber", "sith": true, "children": 2, "childNames": "Luke, Leia"};
+console.log(Object.keys(darthVader).length);
+console.log(darthVader.allegiance);
+console.log(darthVader.weapon);
+console.log(darthVader.sith);
+console.log(darthVader.children);
+console.log(darthVader.childNames);
+delete darthVader.children;
+let{allegiance, weapon, sith, childNames} = darthVader;
+console.log(Object.keys(darthVader).length);
+console.log(darthVader.allegiance);
+console.log(darthVader.weapon);
+console.log(darthVader.sith);
+console.log(darthVader.children);
+console.log(darthVader.childNames);
